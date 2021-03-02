@@ -1,0 +1,165 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local LT2 = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local Tabs = Instance.new("Frame")
+local LT21 = Instance.new("ImageLabel")
+local DM = Instance.new("TextButton")
+local C = Instance.new("TextButton")
+local TextLabel = Instance.new("TextLabel")
+local DMtab = Instance.new("Frame")
+local Duper = Instance.new("TextButton")
+local Ctab = Instance.new("Frame")
+local TextLabel_2 = Instance.new("TextLabel")
+local TextLabel_3 = Instance.new("TextLabel")
+
+--Properties:
+
+LT2.Name = "LT2"
+LT2.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+LT2.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Frame.Parent = LT2
+Frame.BackgroundColor3 = Color3.fromRGB(109, 70, 43)
+Frame.Position = UDim2.new(0.310067117, 0, 0.268149853, 0)
+Frame.Size = UDim2.new(0, 397, 0, 296)
+
+UICorner.Parent = Frame
+
+Tabs.Name = "Tabs"
+Tabs.Parent = Frame
+Tabs.BackgroundColor3 = Color3.fromRGB(93, 53, 27)
+Tabs.BorderSizePixel = 0
+Tabs.Position = UDim2.new(-0.00048751256, 0, 0, 0)
+Tabs.Size = UDim2.new(0, 137, 0, 296)
+
+LT21.Name = "LT21"
+LT21.Parent = Tabs
+LT21.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+LT21.Position = UDim2.new(0.131386861, 0, 0.0641891882, 0)
+LT21.Size = UDim2.new(0, 100, 0, 100)
+LT21.Image = "http://www.roblox.com/asset/?id=6467237641"
+
+DM.Name = "DM"
+DM.Parent = Tabs
+DM.BackgroundColor3 = Color3.fromRGB(112, 74, 36)
+DM.BorderSizePixel = 0
+DM.Position = UDim2.new(0, 0, 0.520270228, 0)
+DM.Size = UDim2.new(0, 137, 0, 35)
+DM.Font = Enum.Font.Fantasy
+DM.Text = "Dupe Money"
+DM.TextColor3 = Color3.fromRGB(203, 157, 104)
+DM.TextSize = 20.000
+DM.TextStrokeColor3 = Color3.fromRGB(136, 74, 42)
+DM.TextStrokeTransparency = 0.000
+
+C.Name = "C"
+C.Parent = Tabs
+C.BackgroundColor3 = Color3.fromRGB(112, 74, 36)
+C.BorderSizePixel = 0
+C.Position = UDim2.new(0, 0, 0.719594598, 0)
+C.Size = UDim2.new(0, 137, 0, 35)
+C.Font = Enum.Font.Fantasy
+C.Text = "Credits"
+C.TextColor3 = Color3.fromRGB(203, 157, 104)
+C.TextSize = 20.000
+C.TextStrokeColor3 = Color3.fromRGB(136, 74, 42)
+C.TextStrokeTransparency = 0.000
+
+TextLabel.Parent = Tabs
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(0, 0, 0.402027041, 0)
+TextLabel.Size = UDim2.new(0, 137, 0, 34)
+TextLabel.Font = Enum.Font.Fantasy
+TextLabel.Text = "Lumber Tycoon 2"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 18.000
+
+DMtab.Name = "DMtab"
+DMtab.Parent = Frame
+DMtab.BackgroundColor3 = Color3.fromRGB(111, 63, 29)
+DMtab.BorderColor3 = Color3.fromRGB(103, 63, 17)
+DMtab.Position = UDim2.new(0.387909323, 0, 0.0641891882, 0)
+DMtab.Size = UDim2.new(0, 225, 0, 259)
+
+Duper.Name = "Duper"
+Duper.Parent = DMtab
+Duper.BackgroundColor3 = Color3.fromRGB(138, 78, 28)
+Duper.Position = UDim2.new(0.0533333346, 0, 0.32432431, 0)
+Duper.Size = UDim2.new(0, 200, 0, 50)
+Duper.Font = Enum.Font.SpecialElite
+Duper.Text = "Duper"
+Duper.TextColor3 = Color3.fromRGB(0, 0, 0)
+Duper.TextSize = 30.000
+Duper.MouseButton1Down:Connect(function()
+	loadstring(game:HttpGet(('https://pastebin.com/raw/FFB3wAgi'),true))()
+end)
+
+
+Ctab.Name = "Ctab"
+Ctab.Parent = Frame
+Ctab.BackgroundColor3 = Color3.fromRGB(111, 63, 29)
+Ctab.BorderColor3 = Color3.fromRGB(103, 63, 17)
+Ctab.Position = UDim2.new(0.387909323, 0, 0.0641891882, 0)
+Ctab.Size = UDim2.new(0, 225, 0, 259)
+Ctab.Visible = false
+
+TextLabel_2.Parent = Ctab
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.Position = UDim2.new(0.0533333346, 0, 0.231660232, 0)
+TextLabel_2.Size = UDim2.new(0, 200, 0, 22)
+TextLabel_2.Font = Enum.Font.SpecialElite
+TextLabel_2.Text = "All UI and script was from"
+TextLabel_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.TextSize = 14.000
+
+TextLabel_3.Parent = Ctab
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.Position = UDim2.new(0.0533333346, 0, 0.432432413, 0)
+TextLabel_3.Size = UDim2.new(0, 200, 0, 22)
+TextLabel_3.Font = Enum.Font.SpecialElite
+TextLabel_3.Text = "Zoro#1274"
+TextLabel_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_3.TextSize = 14.000
+
+-- Scripts:
+
+local function ETFUZJK_fake_script() -- DM.LocalScript 
+	local script = Instance.new('LocalScript', DM)
+
+	local parent = script.Parent
+	
+	parent.MouseButton1Down:Connect(function()
+		local c = script.Parent.Parent.Parent.Ctab
+		
+		local dm = script.Parent.Parent.Parent.DMtab
+		dm.Visible = true
+		if dm.Visible == true then
+			c.Visible = false
+		end
+	end)
+end
+coroutine.wrap(ETFUZJK_fake_script)()
+local function GXQGSIC_fake_script() -- C.LocalScript 
+	local script = Instance.new('LocalScript', C)
+
+	local parent = script.Parent
+	
+	parent.MouseButton1Down:Connect(function()
+		local c = script.Parent.Parent.Parent.DMtab
+	
+		local dm = script.Parent.Parent.Parent.Ctab
+		dm.Visible = true
+		if dm.Visible == true then
+			c.Visible = false
+		end
+	end)
+end
+coroutine.wrap(GXQGSIC_fake_script)()
